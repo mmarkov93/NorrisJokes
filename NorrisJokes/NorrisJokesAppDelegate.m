@@ -13,7 +13,7 @@
 
 @synthesize window=_window;
 
-
+//Martin Comment
 
 @synthesize managedObjectContext=__managedObjectContext;
 
