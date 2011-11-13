@@ -14,7 +14,7 @@
 @synthesize message;
 @synthesize dateAdded;
 @synthesize author;
-@synthesize category;
+@synthesize category; 
 @synthesize rating;
 @synthesize votes;
 @synthesize userVote;
