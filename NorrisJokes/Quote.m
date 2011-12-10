@@ -11,6 +11,7 @@
 
 @implementation Quote
 
+@synthesize key;
 @synthesize message;
 @synthesize dateAdded;
 @synthesize author;

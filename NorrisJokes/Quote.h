@@ -13,6 +13,7 @@ typedef enum Category {
 }Category;
 
 @interface Quote : NSObject {
+    int key;
     NSString *message;
     NSDate *dateAdded;
     NSString *author;
@@ -23,6 +24,7 @@ typedef enum Category {
     
 }
 
+@property int key;
 @property (nonatomic, retain) NSString *message;
 @property (nonatomic, retain) NSDate *dateAdded;
 @property (nonatomic, retain) NSString *author;
