@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		394BA40D14911D7A006549EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394BA40C14911D7A006549EE /* SenTestingKit.framework */; };
+		394BA40E14911D7A006549EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A825D146F1B570002B579 /* UIKit.framework */; };
+		394BA40F14911D7A006549EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A825F146F1B570002B579 /* Foundation.framework */; };
+		394BA41514911D7A006549EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 394BA41314911D7A006549EE /* InfoPlist.strings */; };
+		394BA41814911D7A006549EE /* MyAppLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 394BA41714911D7A006549EE /* MyAppLogicTests.m */; };
+		39B608E01478F82C00954ED7 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608DF1478F82C00954ED7 /* Quote.m */; };
+		39B608E31478F83D00954ED7 /* QuotesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E21478F83D00954ED7 /* QuotesList.m */; };
+		39B608E61478F84900954ED7 /* DatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E51478F84900954ED7 /* DatabaseService.m */; };
+		39CD63E01493884800CD7037 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CD63DF1493884800CD7037 /* libsqlite3.0.dylib */; };
+		39E523BC1493EC0C0082B4C2 /* Quote.h in Sources */ = {isa = PBXBuildFile; fileRef = 39B608DD1478F81F00954ED7 /* Quote.h */; };
+		39E523BD1493EC0C0082B4C2 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608DF1478F82C00954ED7 /* Quote.m */; };
+		39E523BE1493EC280082B4C2 /* DatabaseService.h in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E41478F84900954ED7 /* DatabaseService.h */; };
+		39E523BF1493EC280082B4C2 /* DatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E51478F84900954ED7 /* DatabaseService.m */; };
 		BA6A825E146F1B570002B579 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A825D146F1B570002B579 /* UIKit.framework */; };
 		BA6A8260146F1B570002B579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A825F146F1B570002B579 /* Foundation.framework */; };
 		BA6A8262146F1B570002B579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A8261146F1B570002B579 /* CoreGraphics.framework */; };
@@ -19,22 +32,47 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		394BA40B14911D7A006549EE /* MyAppLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		394BA40C14911D7A006549EE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		394BA41214911D7A006549EE /* MyAppLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyAppLogicTests-Info.plist"; sourceTree = "<group>"; };
+		394BA41414911D7A006549EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		394BA41614911D7A006549EE /* MyAppLogicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppLogicTests.h; sourceTree = "<group>"; };
+		394BA41714911D7A006549EE /* MyAppLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppLogicTests.m; sourceTree = "<group>"; };
+		394BA41914911D7A006549EE /* MyAppLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyAppLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		39B608DD1478F81F00954ED7 /* Quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
+		39B608DF1478F82C00954ED7 /* Quote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
+		39B608E11478F83400954ED7 /* QuotesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesList.h; sourceTree = "<group>"; };
+		39B608E21478F83D00954ED7 /* QuotesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesList.m; sourceTree = "<group>"; };
+		39B608E41478F84900954ED7 /* DatabaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseService.h; sourceTree = "<group>"; };
+		39B608E51478F84900954ED7 /* DatabaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseService.m; sourceTree = "<group>"; };
+		39CD63DF1493884800CD7037 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		BA6A8259146F1B570002B579 /* NorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6A825D146F1B570002B579 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA6A825F146F1B570002B579 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA6A8261146F1B570002B579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BA6A8263146F1B570002B579 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		BA6A8267146F1B570002B579 /* NorrisJokes-Info.plist */ = {isa = PBXFileReference; path = "NorrisJokes-Info.plist"; sourceTree = "<group>"; };
+		BA6A8267146F1B570002B579 /* NorrisJokes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NorrisJokes-Info.plist"; sourceTree = "<group>"; };
 		BA6A8269146F1B570002B579 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BA6A826B146F1B570002B579 /* NorrisJokes-Prefix.pch */ = {isa = PBXFileReference; path = "NorrisJokes-Prefix.pch"; sourceTree = "<group>"; };
+		BA6A826B146F1B570002B579 /* NorrisJokes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NorrisJokes-Prefix.pch"; sourceTree = "<group>"; };
 		BA6A826C146F1B570002B579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA6A826E146F1B570002B579 /* NorrisJokesAppDelegate.h */ = {isa = PBXFileReference; path = NorrisJokesAppDelegate.h; sourceTree = "<group>"; };
+		BA6A826E146F1B570002B579 /* NorrisJokesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NorrisJokesAppDelegate.h; sourceTree = "<group>"; };
 		BA6A826F146F1B570002B579 /* NorrisJokesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NorrisJokesAppDelegate.m; sourceTree = "<group>"; };
 		BA6A8272146F1B570002B579 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		BA6A8275146F1B580002B579 /* NorrisJokes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NorrisJokes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		394BA40714911D7A006549EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CD63E01493884800CD7037 /* libsqlite3.0.dylib in Frameworks */,
+				394BA40D14911D7A006549EE /* SenTestingKit.framework in Frameworks */,
+				394BA40E14911D7A006549EE /* UIKit.framework in Frameworks */,
+				394BA40F14911D7A006549EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6A8256146F1B570002B579 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +87,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		394BA41014911D7A006549EE /* MyAppLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				394BA41614911D7A006549EE /* MyAppLogicTests.h */,
+				394BA41714911D7A006549EE /* MyAppLogicTests.m */,
+				394BA41114911D7A006549EE /* Supporting Files */,
+			);
+			path = MyAppLogicTests;
+			sourceTree = "<group>";
+		};
+		394BA41114911D7A006549EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				394BA41214911D7A006549EE /* MyAppLogicTests-Info.plist */,
+				394BA41314911D7A006549EE /* InfoPlist.strings */,
+				394BA41914911D7A006549EE /* MyAppLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BA6A824E146F1B570002B579 = {
 			isa = PBXGroup;
 			children = (
 				BA6A8265146F1B570002B579 /* NorrisJokes */,
+				394BA41014911D7A006549EE /* MyAppLogicTests */,
 				BA6A825C146F1B570002B579 /* Frameworks */,
 				BA6A825A146F1B570002B579 /* Products */,
 			);
@@ -62,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6A8259146F1B570002B579 /* NorrisJokes.app */,
+				394BA40B14911D7A006549EE /* MyAppLogicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,10 +129,12 @@
 		BA6A825C146F1B570002B579 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39CD63DF1493884800CD7037 /* libsqlite3.0.dylib */,
 				BA6A825D146F1B570002B579 /* UIKit.framework */,
 				BA6A825F146F1B570002B579 /* Foundation.framework */,
 				BA6A8261146F1B570002B579 /* CoreGraphics.framework */,
 				BA6A8263146F1B570002B579 /* CoreData.framework */,
+				394BA40C14911D7A006549EE /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,6 +144,12 @@
 			children = (
 				BA6A826E146F1B570002B579 /* NorrisJokesAppDelegate.h */,
 				BA6A826F146F1B570002B579 /* NorrisJokesAppDelegate.m */,
+				39B608E41478F84900954ED7 /* DatabaseService.h */,
+				39B608E51478F84900954ED7 /* DatabaseService.m */,
+				39B608E11478F83400954ED7 /* QuotesList.h */,
+				39B608E21478F83D00954ED7 /* QuotesList.m */,
+				39B608DD1478F81F00954ED7 /* Quote.h */,
+				39B608DF1478F82C00954ED7 /* Quote.m */,
 				BA6A8271146F1B570002B579 /* MainWindow.xib */,
 				BA6A8274146F1B580002B579 /* NorrisJokes.xcdatamodeld */,
 				BA6A8266146F1B570002B579 /* Supporting Files */,
@@ -103,6 +171,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		394BA40A14911D7A006549EE /* MyAppLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394BA41C14911D7A006549EE /* Build configuration list for PBXNativeTarget "MyAppLogicTests" */;
+			buildPhases = (
+				394BA40614911D7A006549EE /* Sources */,
+				394BA40714911D7A006549EE /* Frameworks */,
+				394BA40814911D7A006549EE /* Resources */,
+				394BA40914911D7A006549EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAppLogicTests;
+			productName = MyAppLogicTests;
+			productReference = 394BA40B14911D7A006549EE /* MyAppLogicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BA6A8258146F1B570002B579 /* NorrisJokes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6A8279146F1B580002B579 /* Build configuration list for PBXNativeTarget "NorrisJokes" */;
@@ -125,6 +211,9 @@
 /* Begin PBXProject section */
 		BA6A8250146F1B570002B579 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = BA6A8253146F1B570002B579 /* Build configuration list for PBXProject "NorrisJokes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -138,11 +227,20 @@
 			projectRoot = "";
 			targets = (
 				BA6A8258146F1B570002B579 /* NorrisJokes */,
+				394BA40A14911D7A006549EE /* MyAppLogicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		394BA40814911D7A006549EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394BA41514911D7A006549EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6A8257146F1B570002B579 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,7 +252,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		394BA40914911D7A006549EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		394BA40614911D7A006549EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E523BE1493EC280082B4C2 /* DatabaseService.h in Sources */,
+				39E523BF1493EC280082B4C2 /* DatabaseService.m in Sources */,
+				39E523BC1493EC0C0082B4C2 /* Quote.h in Sources */,
+				39E523BD1493EC0C0082B4C2 /* Quote.m in Sources */,
+				394BA41814911D7A006549EE /* MyAppLogicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6A8255146F1B570002B579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,12 +288,23 @@
 				BA6A826D146F1B570002B579 /* main.m in Sources */,
 				BA6A8270146F1B570002B579 /* NorrisJokesAppDelegate.m in Sources */,
 				BA6A8276146F1B580002B579 /* NorrisJokes.xcdatamodeld in Sources */,
+				39B608E01478F82C00954ED7 /* Quote.m in Sources */,
+				39B608E31478F83D00954ED7 /* QuotesList.m in Sources */,
+				39B608E61478F84900954ED7 /* DatabaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		394BA41314911D7A006549EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394BA41414911D7A006549EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		BA6A8268146F1B570002B579 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -187,6 +324,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		394BA41A14911D7A006549EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyAppLogicTests/MyAppLogicTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "MyAppLogicTests/MyAppLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_SYMBOL_EDIT = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		394BA41B14911D7A006549EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyAppLogicTests/MyAppLogicTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "MyAppLogicTests/MyAppLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_SYMBOL_EDIT = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		BA6A8277146F1B580002B579 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -227,6 +414,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NorrisJokes/NorrisJokes-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NorrisJokes/NorrisJokes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -240,6 +428,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NorrisJokes/NorrisJokes-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NorrisJokes/NorrisJokes-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
@@ -250,6 +439,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		394BA41C14911D7A006549EE /* Build configuration list for PBXNativeTarget "MyAppLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394BA41A14911D7A006549EE /* Debug */,
+				394BA41B14911D7A006549EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BA6A8253146F1B570002B579 /* Build configuration list for PBXProject "NorrisJokes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -266,6 +464,7 @@
 				BA6A827B146F1B580002B579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
