@@ -12,6 +12,11 @@
 		394BA40F14911D7A006549EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A825F146F1B570002B579 /* Foundation.framework */; };
 		394BA41514911D7A006549EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 394BA41314911D7A006549EE /* InfoPlist.strings */; };
 		394BA41814911D7A006549EE /* MyAppLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 394BA41714911D7A006549EE /* MyAppLogicTests.m */; };
+		39A2B2A614B71E4400911F2D /* QuotesDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A2B2A514B71E4400911F2D /* QuotesDatabaseService.m */; };
+		39A2B2B714B79ECA00911F2D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CD63DF1493884800CD7037 /* libsqlite3.0.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		39A2B2B814B7A44200911F2D /* QuotesDatabaseService.h in Sources */ = {isa = PBXBuildFile; fileRef = 39A2B2A414B71E4400911F2D /* QuotesDatabaseService.h */; };
+		39A2B2B914B7A44A00911F2D /* QuotesDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A2B2A514B71E4400911F2D /* QuotesDatabaseService.m */; };
+		39A2B2BF14B7B4E800911F2D /* data.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 39A2B2BE14B7B4E800911F2D /* data.sqlite */; };
 		39B608E01478F82C00954ED7 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608DF1478F82C00954ED7 /* Quote.m */; };
 		39B608E31478F83D00954ED7 /* QuotesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E21478F83D00954ED7 /* QuotesList.m */; };
 		39B608E61478F84900954ED7 /* DatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E51478F84900954ED7 /* DatabaseService.m */; };
@@ -39,6 +44,9 @@
 		394BA41614911D7A006549EE /* MyAppLogicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAppLogicTests.h; sourceTree = "<group>"; };
 		394BA41714911D7A006549EE /* MyAppLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppLogicTests.m; sourceTree = "<group>"; };
 		394BA41914911D7A006549EE /* MyAppLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyAppLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		39A2B2A414B71E4400911F2D /* QuotesDatabaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesDatabaseService.h; sourceTree = "<group>"; };
+		39A2B2A514B71E4400911F2D /* QuotesDatabaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesDatabaseService.m; sourceTree = "<group>"; };
+		39A2B2BE14B7B4E800911F2D /* data.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.sqlite; sourceTree = "<group>"; };
 		39B608DD1478F81F00954ED7 /* Quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
 		39B608DF1478F82C00954ED7 /* Quote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
 		39B608E11478F83400954ED7 /* QuotesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesList.h; sourceTree = "<group>"; };
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A2B2B714B79ECA00911F2D /* libsqlite3.0.dylib in Frameworks */,
 				BA6A825E146F1B570002B579 /* UIKit.framework in Frameworks */,
 				BA6A8260146F1B570002B579 /* Foundation.framework in Frameworks */,
 				BA6A8262146F1B570002B579 /* CoreGraphics.framework in Frameworks */,
@@ -142,6 +151,7 @@
 		BA6A8265146F1B570002B579 /* NorrisJokes */ = {
 			isa = PBXGroup;
 			children = (
+				39A2B2BE14B7B4E800911F2D /* data.sqlite */,
 				BA6A826E146F1B570002B579 /* NorrisJokesAppDelegate.h */,
 				BA6A826F146F1B570002B579 /* NorrisJokesAppDelegate.m */,
 				39B608E41478F84900954ED7 /* DatabaseService.h */,
@@ -152,6 +162,8 @@
 				39B608DF1478F82C00954ED7 /* Quote.m */,
 				BA6A8271146F1B570002B579 /* MainWindow.xib */,
 				BA6A8274146F1B580002B579 /* NorrisJokes.xcdatamodeld */,
+				39A2B2A414B71E4400911F2D /* QuotesDatabaseService.h */,
+				39A2B2A514B71E4400911F2D /* QuotesDatabaseService.m */,
 				BA6A8266146F1B570002B579 /* Supporting Files */,
 			);
 			path = NorrisJokes;
@@ -247,6 +259,7 @@
 			files = (
 				BA6A826A146F1B570002B579 /* InfoPlist.strings in Resources */,
 				BA6A8273146F1B570002B579 /* MainWindow.xib in Resources */,
+				39A2B2BF14B7B4E800911F2D /* data.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A2B2B914B7A44A00911F2D /* QuotesDatabaseService.m in Sources */,
+				39A2B2B814B7A44200911F2D /* QuotesDatabaseService.h in Sources */,
 				39E523BE1493EC280082B4C2 /* DatabaseService.h in Sources */,
 				39E523BF1493EC280082B4C2 /* DatabaseService.m in Sources */,
 				39E523BC1493EC0C0082B4C2 /* Quote.h in Sources */,
@@ -291,6 +306,7 @@
 				39B608E01478F82C00954ED7 /* Quote.m in Sources */,
 				39B608E31478F83D00954ED7 /* QuotesList.m in Sources */,
 				39B608E61478F84900954ED7 /* DatabaseService.m in Sources */,
+				39A2B2A614B71E4400911F2D /* QuotesDatabaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
