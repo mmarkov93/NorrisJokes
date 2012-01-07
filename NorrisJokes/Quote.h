@@ -8,29 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum Category {
-    TestCategory
-}Category;
-
 @interface Quote : NSObject {
-    int key;
+    
+    int ID;
     NSString *message;
     NSDate *dateAdded;
-    NSString *author;
-    Category category;
-    double rating;
-    int votes;
-    double userVote;
+    NSDate *dateModified;
+    int plusVotes;
+    int minusVotes;
     
 }
 
 @property int key;
 @property (nonatomic, retain) NSString *message;
 @property (nonatomic, retain) NSDate *dateAdded;
-@property (nonatomic, retain) NSString *author;
-@property Category category;
-@property double rating;
-@property int votes;
-@property double userVote;
+@property (nonatomic, retain) NSDate *dateModified;
+@property int plusVotes;
+@property int minusVotes;
+
+-(id)initWithID:(int)key Message:(NSString*)message DateAdded:(NSDate*)dateAdded DateModified:(NSDate*)dateModified PlusVotes:(int)plusVotes MinusVotes:(int)minusVotes; 
 
 @end
