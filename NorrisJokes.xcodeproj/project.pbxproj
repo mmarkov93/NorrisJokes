@@ -18,13 +18,9 @@
 		39A2B2B914B7A44A00911F2D /* QuotesDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A2B2A514B71E4400911F2D /* QuotesDatabaseService.m */; };
 		39A2B2BF14B7B4E800911F2D /* data.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 39A2B2BE14B7B4E800911F2D /* data.sqlite */; };
 		39B608E01478F82C00954ED7 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608DF1478F82C00954ED7 /* Quote.m */; };
-		39B608E31478F83D00954ED7 /* QuotesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E21478F83D00954ED7 /* QuotesList.m */; };
-		39B608E61478F84900954ED7 /* DatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E51478F84900954ED7 /* DatabaseService.m */; };
 		39CD63E01493884800CD7037 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CD63DF1493884800CD7037 /* libsqlite3.0.dylib */; };
 		39E523BC1493EC0C0082B4C2 /* Quote.h in Sources */ = {isa = PBXBuildFile; fileRef = 39B608DD1478F81F00954ED7 /* Quote.h */; };
 		39E523BD1493EC0C0082B4C2 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608DF1478F82C00954ED7 /* Quote.m */; };
-		39E523BE1493EC280082B4C2 /* DatabaseService.h in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E41478F84900954ED7 /* DatabaseService.h */; };
-		39E523BF1493EC280082B4C2 /* DatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B608E51478F84900954ED7 /* DatabaseService.m */; };
 		BA6A825E146F1B570002B579 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A825D146F1B570002B579 /* UIKit.framework */; };
 		BA6A8260146F1B570002B579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A825F146F1B570002B579 /* Foundation.framework */; };
 		BA6A8262146F1B570002B579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A8261146F1B570002B579 /* CoreGraphics.framework */; };
@@ -49,10 +45,6 @@
 		39A2B2BE14B7B4E800911F2D /* data.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.sqlite; sourceTree = "<group>"; };
 		39B608DD1478F81F00954ED7 /* Quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
 		39B608DF1478F82C00954ED7 /* Quote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
-		39B608E11478F83400954ED7 /* QuotesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesList.h; sourceTree = "<group>"; };
-		39B608E21478F83D00954ED7 /* QuotesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesList.m; sourceTree = "<group>"; };
-		39B608E41478F84900954ED7 /* DatabaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseService.h; sourceTree = "<group>"; };
-		39B608E51478F84900954ED7 /* DatabaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseService.m; sourceTree = "<group>"; };
 		39CD63DF1493884800CD7037 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		BA6A8259146F1B570002B579 /* NorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6A825D146F1B570002B579 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -154,10 +146,6 @@
 				39A2B2BE14B7B4E800911F2D /* data.sqlite */,
 				BA6A826E146F1B570002B579 /* NorrisJokesAppDelegate.h */,
 				BA6A826F146F1B570002B579 /* NorrisJokesAppDelegate.m */,
-				39B608E41478F84900954ED7 /* DatabaseService.h */,
-				39B608E51478F84900954ED7 /* DatabaseService.m */,
-				39B608E11478F83400954ED7 /* QuotesList.h */,
-				39B608E21478F83D00954ED7 /* QuotesList.m */,
 				39B608DD1478F81F00954ED7 /* Quote.h */,
 				39B608DF1478F82C00954ED7 /* Quote.m */,
 				BA6A8271146F1B570002B579 /* MainWindow.xib */,
@@ -288,8 +276,6 @@
 			files = (
 				39A2B2B914B7A44A00911F2D /* QuotesDatabaseService.m in Sources */,
 				39A2B2B814B7A44200911F2D /* QuotesDatabaseService.h in Sources */,
-				39E523BE1493EC280082B4C2 /* DatabaseService.h in Sources */,
-				39E523BF1493EC280082B4C2 /* DatabaseService.m in Sources */,
 				39E523BC1493EC0C0082B4C2 /* Quote.h in Sources */,
 				39E523BD1493EC0C0082B4C2 /* Quote.m in Sources */,
 				394BA41814911D7A006549EE /* MyAppLogicTests.m in Sources */,
@@ -304,8 +290,6 @@
 				BA6A8270146F1B570002B579 /* NorrisJokesAppDelegate.m in Sources */,
 				BA6A8276146F1B580002B579 /* NorrisJokes.xcdatamodeld in Sources */,
 				39B608E01478F82C00954ED7 /* Quote.m in Sources */,
-				39B608E31478F83D00954ED7 /* QuotesList.m in Sources */,
-				39B608E61478F84900954ED7 /* DatabaseService.m in Sources */,
 				39A2B2A614B71E4400911F2D /* QuotesDatabaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
